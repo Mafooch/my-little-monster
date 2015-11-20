@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2223F81BFFB808002106BC /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2223F71BFFB808002106BC /* DragImg.swift */; };
 		DD7E6AC31BFE674C00C79BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E6AC21BFE674C00C79BAC /* AppDelegate.swift */; };
 		DD7E6AC51BFE674C00C79BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E6AC41BFE674C00C79BAC /* ViewController.swift */; };
 		DD7E6AC81BFE674C00C79BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7E6AC61BFE674C00C79BAC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD2223F71BFFB808002106BC /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
 		DD7E6ABF1BFE674C00C79BAC /* my-little-monster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-little-monster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7E6AC21BFE674C00C79BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7E6AC41BFE674C00C79BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				DD7E6AC21BFE674C00C79BAC /* AppDelegate.swift */,
 				DD7E6AC41BFE674C00C79BAC /* ViewController.swift */,
+				DD2223F71BFFB808002106BC /* DragImg.swift */,
 				DD7E6AC61BFE674C00C79BAC /* Main.storyboard */,
 				DD7E6AC91BFE674C00C79BAC /* Assets.xcassets */,
 				DD7E6ACB1BFE674C00C79BAC /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2223F81BFFB808002106BC /* DragImg.swift in Sources */,
 				DD7E6AC51BFE674C00C79BAC /* ViewController.swift in Sources */,
 				DD7E6AC31BFE674C00C79BAC /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				DD7E6AD31BFE674C00C79BAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

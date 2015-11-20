@@ -106,6 +106,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="monsterImg" destination="hP7-Gy-Meg" id="jOv-KZ-fIR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

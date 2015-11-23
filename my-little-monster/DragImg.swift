@@ -13,6 +13,8 @@ class DragImg: UIImageView {
     
     var originalPosition: CGPoint!
 //    has an x & y coordinate. we use this to store the original location to send back the image after an unsuccessful drag..
+    var dropTarget: UIView?
+//    we may not just want a uiimage as the target, may be a button, etc.. think for the future
     override init(frame: CGRect) {
 //        we're overriding the uiimageview initializer but also including some of the original
         super.init(frame: frame)
@@ -40,6 +42,16 @@ class DragImg: UIImageView {
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let touch = touches.first, let target = dropTarget {
+//            wanna make sure they're both not empty before we try and use it
+            let position = touch.locationInView(self.superview)
+            
+            if CGRectContainsPoint(target.frame, position) {
+//            checks to see if the position is inside the golem frame
+                NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: "onTargetDropped", object: nil))
+                
+            }
+        }
         self.center = originalPosition
     }
 }

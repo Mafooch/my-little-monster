@@ -16,6 +16,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        foodImg.dropTarget = monsterImg
+        heartImg.dropTarget = monsterImg
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemDroppedOnCharacter:", name: "onTargetDropped", object: nil)
+//          here we're gonna listen as an 'observer' for that notification
+//          self is observer, selector is the function it's gonna call. the : means there's one or more params. NSNotifications pass in a NSNotification object as a parameter, so we have to put it here in this case. name of the incoming notification is "onTargetDropped"
     }
+    
+    func itemDroppedOnCharacter(notif: AnyObject) {
+        print("ITEM DROPPED ON CHARACTER")
+    }
+
 }
 

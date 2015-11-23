@@ -12,7 +12,7 @@ import UIKit
 class DragImg: UIImageView {
     
     var originalPosition: CGPoint!
-//    has an x & y coordinate. we use this to story the original location to send back the image after an unsuccessful drag..
+//    has an x & y coordinate. we use this to store the original location to send back the image after an unsuccessful drag..
     override init(frame: CGRect) {
 //        we're overriding the uiimageview initializer but also including some of the original
         super.init(frame: frame)

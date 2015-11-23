@@ -91,17 +91,31 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0u-uT-2VC">
+                                <rect key="frame" x="203" y="259" width="194" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Start Over?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStartOverBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NE2-mY-fBa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="T0u-uT-2VC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="11y-kL-hW6"/>
                             <constraint firstItem="BVH-0c-5Re" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3i0-NM-yzX"/>
                             <constraint firstItem="uJ8-eo-Qsv" firstAttribute="top" secondItem="BVH-0c-5Re" secondAttribute="bottom" constant="15" id="4VY-w0-Acf"/>
                             <constraint firstItem="5PC-rV-MjI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7yZ-lL-PVv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LHG-d9-dk0" secondAttribute="bottom" id="8J1-iC-FVz"/>
+                            <constraint firstItem="T0u-uT-2VC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9RJ-DC-dL3"/>
                             <constraint firstItem="hP7-Gy-Meg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="40" id="EUb-QE-wNi"/>
                             <constraint firstItem="LHG-d9-dk0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EyA-NP-3Gs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hP7-Gy-Meg" secondAttribute="bottom" constant="38" id="F3m-0B-vRo"/>
                             <constraint firstItem="4Ic-Ce-c3H" firstAttribute="centerY" secondItem="BVH-0c-5Re" secondAttribute="centerY" id="Kqr-Hq-f5k"/>
+                            <constraint firstItem="T0u-uT-2VC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lg0-wp-wYP"/>
                             <constraint firstItem="BVH-0c-5Re" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oko-nB-HlB"/>
                             <constraint firstItem="uJ8-eo-Qsv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RJE-yy-szh"/>
                             <constraint firstItem="4Ic-Ce-c3H" firstAttribute="centerX" secondItem="BVH-0c-5Re" secondAttribute="centerX" id="RS2-Bj-cb2"/>
@@ -124,6 +138,7 @@
                                 <exclude reference="kCP-hf-qm4"/>
                                 <exclude reference="xXh-Uz-40d"/>
                                 <exclude reference="zKM-SA-RP4"/>
+                                <exclude reference="Lg0-wp-wYP"/>
                                 <exclude reference="YIo-Y2-UFU"/>
                             </mask>
                         </variation>
@@ -146,6 +161,7 @@
                         <outlet property="penalty1Img" destination="dsL-9W-Klu" id="56d-Us-lrP"/>
                         <outlet property="penalty2Img" destination="OwI-La-1wE" id="xXB-Zn-czv"/>
                         <outlet property="penalty3Img" destination="snn-xc-AAQ" id="g1r-Yg-ikD"/>
+                        <outlet property="startOverBtn" destination="T0u-uT-2VC" id="WaZ-zx-inH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

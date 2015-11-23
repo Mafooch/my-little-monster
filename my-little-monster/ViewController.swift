@@ -11,13 +11,18 @@ import AVFoundation
 //have to import the code that has the audio player
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var startOverBtn: UIButton!
     @IBOutlet weak var monsterImg: MonsterImg!
     @IBOutlet weak var foodImg: DragImg!
     @IBOutlet weak var heartImg: DragImg!
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
     @IBOutlet weak var penalty3Img: UIImageView!
+    
+    @IBAction func onStartOverBtnPressed(sender: AnyObject) {
+        resetGame()
+    }
 
     
     let DIM_ALPHA: CGFloat = 0.2 // a special type of float used for alpha
@@ -156,7 +161,11 @@ class ViewController: UIViewController {
         timer.invalidate()
         monsterImg.playDeathAnimation()
         sfxDeath.play()
+        startOverBtn.hidden = false
     }
-
+    
+    func resetGame() {
+        
+    }
 }
 

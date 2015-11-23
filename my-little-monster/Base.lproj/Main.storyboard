@@ -34,8 +34,8 @@
                                     <constraint firstAttribute="width" constant="240" id="aLX-E4-etF"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Ic-Ce-c3H">
-                                <rect key="frame" x="204" y="38" width="182" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Ic-Ce-c3H">
+                                <rect key="frame" x="209" y="38" width="182" height="50"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="dsL-9W-Klu">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -143,6 +143,9 @@
                         <outlet property="foodImg" destination="L7L-p0-DUb" id="VZc-LS-3h6"/>
                         <outlet property="heartImg" destination="rEq-dN-cWE" id="EVG-F6-usK"/>
                         <outlet property="monsterImg" destination="hP7-Gy-Meg" id="jOv-KZ-fIR"/>
+                        <outlet property="penalty1Img" destination="dsL-9W-Klu" id="56d-Us-lrP"/>
+                        <outlet property="penalty2Img" destination="OwI-La-1wE" id="xXB-Zn-czv"/>
+                        <outlet property="penalty3Img" destination="snn-xc-AAQ" id="g1r-Yg-ikD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
